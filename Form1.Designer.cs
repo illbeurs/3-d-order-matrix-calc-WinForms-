@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             button1 = new Button();
             tableLayoutPanel1 = new TableLayoutPanel();
             groupBox1 = new GroupBox();
@@ -46,6 +47,8 @@
             label3 = new Label();
             textBox1 = new TextBox();
             label5 = new Label();
+            panel1 = new Panel();
+            panel2 = new Panel();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -261,11 +264,32 @@
             label5.TabIndex = 15;
             label5.Text = "Third Order Matrix Calculator";
             // 
+            // panel1
+            // 
+            panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
+            panel1.Location = new Point(226, 58);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(14, 130);
+            panel1.TabIndex = 16;
+            panel1.Visible = false;
+            // 
+            // panel2
+            // 
+            panel2.BackgroundImage = (Image)resources.GetObject("panel2.BackgroundImage");
+            panel2.Location = new Point(92, 58);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(14, 130);
+            panel2.TabIndex = 17;
+            panel2.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.SeaShell;
             ClientSize = new Size(800, 450);
+            Controls.Add(panel2);
+            Controls.Add(panel1);
             Controls.Add(label5);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -305,5 +329,7 @@
         private ComboBox comboBox1;
         private TextBox textBox1;
         private Label label5;
+        private Panel panel1;
+        private Panel panel2;
     }
 }

@@ -78,6 +78,8 @@ namespace summer_practice
             label4.Visible = false;
             //button7.Location = new Point(450, button7.Location.Y);
             button7.Visible = false;
+            panel1.Visible = true;
+            panel2.Visible = true;
             A = read_matrix(tableLayoutPanel1);
             label3.Visible = true;
             label3.Text = $"det(A) = {A.det()}";
@@ -92,6 +94,8 @@ namespace summer_practice
             label4.Visible = true;
             label3.Visible = false;
             button7.Visible = true;
+            panel1.Visible = false;
+            panel2.Visible = false;
         }
 
         //mult click
